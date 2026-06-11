@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!--Montserrat font-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  <!--Icons-->
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+  <section>
+    <!-- MOBILE NAVIGATION -->
+    <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-none brand-text-hover">HOME</a>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+        onclick="toggleNavigation()">&#9776;</a>
+    </div>
+    <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+      <a href="about.html"
+        class="w3-bar-item w3-button w3-center w3-hover-none nav-adaptive w3-bottombar brand-border-hover brand-text-hover"
+        style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+      <a href="experience.html"
+        class="w3-bar-item w3-button w3-center w3-hover-none nav-adaptive w3-bottombar brand-border-hover brand-text-hover"
+        style="border-width: 2px !important;" onclick="toggleNavigation()">EXPERIENCE</a>
+      <a href="projects.html"
+        class="w3-bar-item w3-button w3-center w3-hover-none nav-adaptive w3-bottombar brand-border-hover brand-text-hover"
+        style="border-width: 2px !important;" onclick="toggleNavigation()">PROJECTS</a>
+    </div>
+
+    <!-- SOCIAL SECTION -->
+    <section class="image-section w3-quarter w3-fixed w3-padding-small">
+      <!--IMAGE/AVATAR-->
+      <img src="https://avatars.githubusercontent.com/u/112962251?v=4" class="w3-circle w3-border w3-border-sand"
+        style="border-width: 3px !important;" />
+      <!--SCIAL NETWORK BUTTONS-->
+      <div class="links w3-margin-top w3-padding-small">
+        <a class="icon-link w3-text-sand brand-text-hover" href="https://www.facebook.com/MECHADOMINUS2004/"
+          target="_blank">
+          <i style="font-size: 40px;" class="devicon-facebook-plain mono-icon"></i>
+        </a>
+        <a class="icon-link w3-text-sand brand-text-hover" href="https://github.com/bradfordward24" target="_blank">
+          <i style="font-size: 40px;" class="devicon-linkedin-plain mono-icon"></i>
+        </a>
+        <a class="icon-link w3-text-sand brand-text-hover" href="https://www.linkedin.com/in/bradford-ward-195564261/"
+          target="_blank">
+          <i style="font-size: 40px;" class="devicon-github-plain mono-icon"></i>
+        </a>
+      </div>
+      <!--CV DOWNLOAD BUTTON-->
+      <div class="w3-container w3-padding-16">
+        <a href="./BradfordWard_Resume.pdf" class="brand-button w3-button w3-round-small w3-padding-large"
+          target="_blank">
+          <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+          <span class="w3-margin-left download-text">DOWNLOAD RESUME</span>
+        </a>
+      </div>
+
+      <div id="contact" class="contact w3-container w3-padding-16 w3-cursive">
+        <h2 class="w3-border-bottom brand-border" style="border-width: 3px !important;">CONTACT ME</h3>
+          <div class="w3-margin-top-2" style="font-weight: 500;">
+            <p>Name: Bradford Ward</p>
+            <a href="tel:+16132466264">Phone: (613) 246-6264</a><br><br>
+            <a href="mailto:brdfrdwrd@gmail.com">E-Mail: brdfrdwrd@gmail.com</a>
+          </div>
+      </div>
+
+    </section>
+
+    <!--CV CONTENT SECTION-->
+    <section class="w3-threequarter w3-padding-large w3-right">
+      <!--DESKTOP NAVIGATION-->
+      <div class="w3-container w3-padding-large w3-hide-small">
+        <a href="index.html"
+          class="w3-bar-item w3-button w3-hover-none nav-adaptive w3-bottombar brand-border-hover brand-text-hover"
+          style="border-width: 2px !important;">HOME</a>
+        <a href="projects.html"
+          class="w3-bar-item w3-button w3-hover-none nav-adaptive w3-bottombar brand-border-hover brand-text-hover w3-right w3-hide-small"
+          style="border-width: 2px !important;" onclick="toggleNavigation()">PROJECTS</a>
+        <a href="experience.html"
+          class="w3-bar-item w3-button w3-hover-none nav-adaptive w3-bottombar brand-border-hover brand-text-hover w3-right w3-hide-small"
+          style="border-width: 2px !important;" onclick="toggleNavigation()">EXPERIENCE</a>
+        <a href="about.html"
+          class="w3-bar-item w3-button w3-hover-none nav-adaptive w3-bottombar brand-border-hover brand-text-hover w3-right w3-hide-small"
+          style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+      </div>
+      <div class="content-container w3-margin-top-2">
+
+
+        <!--PROJECTS-->
+        <div id="projects" class="w3-container w3-padding-24 w3-cursive">
+          <h2>PROJECTS</h2>
+          <div class="w3-container w3-margin-top-2 w3-cursive">
+
+            <!--PERSONAL SECTION-->
+            <h3 class="w3-border-bottom brand-border" style="border-width: 3px !important;">PERSONAL PROJECTS</h3>
+            <div class="">
+              <h4>Iacon - Personal TrueNAS Server</h4>
+              <p>February 2026 – Present</p>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>Configured and deployed a TrueNAS server, nicknamed <a
+                    href=https://tfwiki.net/wiki/Iacon_(polity)>Iacon</a>, on my home network for personal use.
+                  Functionality includes uploading and downloading files via SMB shares, photo-backup from mobile
+                  devices using Immich, and syncing folders from my PC to the server via Syncthing.</li>
+                <li>Using Iacon, I have experimented with self-hosting Large Language AI Models. By integrating Ollama
+                  with Open WebUI, I am able to download and interact with small/medium sized open-source models, using
+                  an RTX 3050 6GB to process tokens.</li>
+                <li>Iacon also serves as a media hub for myself and my family. Using Komga, I am able to stream my
+                  digital archive of comic books to any of my devices for easy access. Furthermore, using JellyFin and
+                  the arr stack of applications, I am able to download and stream movies and TV shows on-demand.</li>
+                <li>Lastly, I have configured Tailscale to create a mesh VPN between Iacon and my personal devices. This
+                  allows me to manage the server and stream content from anywhere on any device.</li>
+                <li>Skills: TrueNAS, ACL, Docker, LLMs and AI, Self-Hosting, Networking</li>
+                <div class="icon-row">
+                  <img src="assets/truenas.svg" alt="ollama" height="50" class="invert">
+                  <i class="devicon-docker-plain mono-icon"></i>
+                  <img src="assets/ollama.svg" alt="ollama" height="50" class="invert">
+                  <img src="assets/oi.png" alt="openwebui" height="50" class="invert">
+                  <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/tailscale-light.svg" alt="Tailscale"
+                    height="40" class="invert">
+                </div>
+              </ul>
+            </div>
+            <div class="">
+              <h4>This Website!</h4>
+              <p>May 2026 – June 2026</p>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>Features include distinct desktop and mobile layouts, embedded video playback, and light/dark mode
+                  reactivity depending on operating system preferences. Currently hosting via GitHub Pages, with plans to incorporate a custom domain down the line.</li>
+                <li>Credit: This site was created by modifying the "CV Clean" spaces template from w3schools.com</li>
+                <li>Skills: HTML, CSS, GitHub</li>
+                <div class="icon-row">
+                  <i class="devicon-html5-plain mono-icon"></i>
+                  <i class="devicon-css3-plain mono-icon"></i>
+                  <i class="devicon-github-plain mono-icon"></i>
+                </div>
+              </ul>
+            </div>
+
+            <!--ACADEMICS SECTION-->
+            <h3 class="w3-border-bottom brand-border" style="border-width: 3px !important;">ACADEMICS</h3>
+            <div class="">
+              <h4>Multi-Storefront Video Game Wishlist Tracker</h4>
+              <p>January 2026 – April 2026</p>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>Created an ER-Model for a database designed to track users, video games, storefronts, and wanted
+                  games.</li>
+                <li>Built a Python front-end around an SQLite database which allows users to login, browse video games
+                  in the database, as well as add and remove games from their wishlist.</li>
+                <li>Users can filter the list of available games by their wishlist in order to compare prices and
+                  availability across all major video game platforms and storefronts.</li>
+                <!-- <li>A demo of my robot can be found <a href=https://youtu.be/u6D3I3LzjJ4>here</a>.</li> -->
+                <iframe class="image-border" width="400" height="225"
+                  src="https://www.youtube.com/embed/u6D3I3LzjJ4?si=sXw2uXDQXzUvTtl7" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" loading="lazy" allowfullscreen></iframe>
+                <li>Skills: Python, SQLite, ER-Modelling, Databases</li>
+                <div class="icon-row">
+                  <i class="devicon-python-plain mono-icon"></i>
+                  <i class="devicon-sqlite-plain mono-icon"></i>
+                  <i class="devicon-unifiedmodelinglanguage-plain mono-icon"></i>
+                </div>
+              </ul>
+            </div>
+            <div class="">
+              <h4>HinLIBS: Hintonville Library Information and Borrowing System</h4>
+              <p>October 2025 – December 2025</p>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>Worked in a team to develop a vertical prototype for an item-borrowing and catalogue-management
+                  system for library use, using C++ for back-end logic, QtCreator to create the front-end, and SQLite
+                  for persistent storage.</li>
+                <li>Authored technical project documentation including justifications for design decisions, UML
+                  diagrams, and a README containing instructions for installation and use.</li>
+                <li>Skills: C++, Qt, SQLite, Git, GitHub, VirtualBox, Technical Writing</li>
+                <div class="icon-row">
+                  <i class="devicon-cplusplus-plain mono-icon"></i>
+                  <i class="devicon-qt-plain mono-icon"></i>
+                  <i class="devicon-sqlite-plain mono-icon"></i>
+                  <i class="devicon-git-plain mono-icon"></i>
+                  <i class="devicon-github-plain mono-icon"></i>
+                  <img src="assets/VirtualBox.svg" alt="VirtualBox" height="40" class="invert">
+                  <i class="devicon-unifiedmodelinglanguage-plain mono-icon"></i>
+                </div>
+              </ul>
+            </div>
+            <div class="">
+              <h4>G-Mart Comics Revamp</h4>
+              <p>September 2025 – December 2025</p>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>Selected a <a
+                    href=https://www.g-mart.com/?srsltid=AfmBOor9VQ2WYx0EXu_N03I81e7hbzd2mCMsJN9tSRBKEw4UbO_SeSEQ>website</a>
+                  with poor UX design, and solicited user tests, interviews, and questionnaires to collect feedback on
+                  the interface over a three-month period.</li>
+                <li>Incorporated user-feedback to create a Balsamiq wireframe and Figma mock-up for a potential redesign
+                  for <a
+                    href=https://www.g-mart.com/?srsltid=AfmBOor9VQ2WYx0EXu_N03I81e7hbzd2mCMsJN9tSRBKEw4UbO_SeSEQ>G-Mart
+                    Comics</a>, an online comic book retailer.</li>
+                <li>Conducted an experiment and performed qualitative and quantitative analysis to determine if my
+                  redesign improved the usability of the interface.</li>
+                <li>Delivered my findings through a series of four reports, a <a href=https://youtu.be/OFxd0axJgCI>video
+                    presentation</a>, and a final report on the experiment and its results.</li>
+                <iframe class="image-border" width="400" height="375"
+                  src="https://embed.figma.com/proto/Ar2nH34RJkHStqqsh3ompy/COMP-3008-Mockup?node-id=2-4754&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A4754&embed-host=share&scaling=scale-down-fit"
+                  allowfullscreen></iframe>
+                <li>Skills: Figma, Balsamiq, UI/UX Design, Experimental Design, Technical Writing, HCI</li>
+                <div class="icon-row">
+                  <i class="devicon-figma-plain mono-icon"></i>
+                  <img src="assets/balsamiq.png" alt="webots" height="50" class="invert">
+                  <i class="devicon-spss-plain mono-icon"></i>
+                </div>
+              </ul>
+            </div>
+            <div class="">
+              <h4>Robot Path Finding Simulation</h4>
+              <p>November 2024 – December 2024</p>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>Worked in a team to coordinate and navigate three simulated robots through a maze using sensors, and
+                  pre-determined paths. The goal of the project was for each robot to collect two items, and place them
+                  at specific locations without interfering with each other.</li>
+                <!-- <li>A demo of my robot can be found <a href=https://youtu.be/wzB-dsK_ykQ>here</a>.</li> -->
+                <iframe class="image-border" width="400" height="225"
+                  src="https://www.youtube.com/embed/wzB-dsK_ykQ?si=st-6zow9faleQl1g" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" loading="lazy" allowfullscreen></iframe>
+                <li>Skills: Java, Webots</li>
+                <div class="icon-row">
+                  <i class="devicon-java-plain mono-icon"></i>
+                  <img src="assets/webots.png" alt="webots" height="40" class="invert">
+                </div>
+              </ul>
+            </div>
+            <div class="">
+              <h4>Ghosts vs. Hunters Simulation</h4>
+              <p>November 2023 – December 2023</p>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>Programmed a multi-threaded simulation in C with a partner, wherein four hunters chase a ghost
+                  through a house with mapped out rooms, which are connected and traversed via linked lists.</li>
+                <li>Made use of code-sharing tools such as GitHub for the purposes of collaborative programming
+                  sessions, as well as version control, maintaining an organized and efficient workflow.</li>
+                <li>Skills: C, Git, GitHub, VirtualBox</li>
+                <div class="icon-row">
+                  <i class="devicon-c-plain mono-icon"></i>
+                  <i class="devicon-git-plain mono-icon"></i>
+                  <i class="devicon-github-plain mono-icon"></i>
+                  <img src="assets/VirtualBox.svg" alt="VirtualBox" height="40" class="invert">
+                </div>
+              </ul>
+            </div>
+          </div>
+
+          <!--FOOTER-->
+          <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+          <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+            <p>© 2026 - Bradford Ward</p>
+            <!-- End footer -->
+          </footer>
+
+          <!--END OF CV SECTION-->
+    </section>
+  </section>
+  <script>
+    // Function to toggle mobile navigation
+    function toggleNavigation() {
+      let nav = document.getElementById("mobile-nav");
+      if (nav.classList.contains('w3-show')) {
+        nav.classList.remove('w3-show');
+      } else {
+        nav.classList.add('w3-show');
+      }
+    }
+  </script>
+  <script>
+    feather.replace()
+  </script>
+</body>
+
+</html>

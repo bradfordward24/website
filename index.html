@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script>
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!--Montserrat font-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  <!--Icons-->
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+  <section>
+    <!-- MOBILE NAVIGATION -->
+    <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-none brand-text-hover">HOME</a>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+        onclick="toggleNavigation()">&#9776;</a>
+    </div>
+    <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+      <a href="about.html"
+        class="w3-bar-item w3-button w3-center w3-hover-none nav-adaptive w3-bottombar brand-border-hover brand-text-hover"
+        style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+      <a href="experience.html"
+        class="w3-bar-item w3-button w3-center w3-hover-none nav-adaptive w3-bottombar brand-border-hover brand-text-hover"
+        style="border-width: 2px !important;" onclick="toggleNavigation()">EXPERIENCE</a>
+      <a href="projects.html"
+        class="w3-bar-item w3-button w3-center w3-hover-none nav-adaptive w3-bottombar brand-border-hover brand-text-hover"
+        style="border-width: 2px !important;" onclick="toggleNavigation()">PROJECTS</a>
+    </div>
+
+    <!-- SOCIAL SECTION -->
+    <section class="image-section w3-quarter w3-fixed w3-padding-small">
+      <!--IMAGE/AVATAR-->
+      <img src="https://avatars.githubusercontent.com/u/112962251?v=4" class="w3-circle w3-border w3-border-sand"
+        style="border-width: 3px !important;" />
+      <!--SCIAL NETWORK BUTTONS-->
+      <div class="links w3-margin-top w3-padding-small">
+        <a class="icon-link w3-text-sand brand-text-hover" href="https://www.facebook.com/MECHADOMINUS2004/"
+          target="_blank">
+          <i style="font-size: 40px;" class="devicon-facebook-plain mono-icon"></i>
+        </a>
+        <a class="icon-link w3-text-sand brand-text-hover" href="https://github.com/bradfordward24" target="_blank">
+          <i style="font-size: 40px;" class="devicon-linkedin-plain mono-icon"></i>
+        </a>
+        <a class="icon-link w3-text-sand brand-text-hover" href="https://www.linkedin.com/in/bradford-ward-195564261/"
+          target="_blank">
+          <i style="font-size: 40px;" class="devicon-github-plain mono-icon"></i>
+        </a>
+      </div>
+      <!--CV DOWNLOAD BUTTON-->
+      <div class="w3-container w3-padding-16">
+        <a href="./BradfordWard_Resume.pdf" class="brand-button w3-button w3-round-small w3-padding-large"
+          target="_blank">
+          <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+          <span class="w3-margin-left download-text">DOWNLOAD RESUME</span>
+        </a>
+      </div>
+
+      <div id="contact" class="contact w3-container w3-padding-16 w3-cursive">
+        <h2 class="w3-border-bottom brand-border" style="border-width: 3px !important;">CONTACT ME</h3>
+          <div class="w3-margin-top-2" style="font-weight: 500;">
+            <p>Name: Bradford Ward</p>
+            <a href="tel:+16132466264">Phone: (613) 246-6264</a><br><br>
+            <a href="mailto:brdfrdwrd@gmail.com">E-Mail: brdfrdwrd@gmail.com</a>
+          </div>
+      </div>
+
+    </section>
+
+    <!--CV CONTENT SECTION-->
+    <section class="w3-threequarter w3-padding-large w3-right">
+      <!--DESKTOP NAVIGATION-->
+      <div class="w3-container w3-padding-large w3-hide-small">
+        <a href="index.html"
+          class="w3-bar-item w3-button w3-hover-none nav-adaptive w3-bottombar brand-border-hover brand-text-hover"
+          style="border-width: 2px !important;">HOME</a>
+        <a href="projects.html"
+          class="w3-bar-item w3-button w3-hover-none nav-adaptive w3-bottombar brand-border-hover brand-text-hover w3-right w3-hide-small"
+          style="border-width: 2px !important;" onclick="toggleNavigation()">PROJECTS</a>
+        <a href="experience.html"
+          class="w3-bar-item w3-button w3-hover-none nav-adaptive w3-bottombar brand-border-hover brand-text-hover w3-right w3-hide-small"
+          style="border-width: 2px !important;" onclick="toggleNavigation()">EXPERIENCE</a>
+        <a href="about.html"
+          class="w3-bar-item w3-button w3-hover-none nav-adaptive w3-bottombar brand-border-hover brand-text-hover w3-right w3-hide-small"
+          style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+      </div>
+
+      <!--HOME SECTION-->
+      <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+        <h1>Bradford Ward</h2>
+          <h2>Computer Science Undergraduate</h2>
+          <p></p>
+      </div>
+
+      <!--INTRO SECTION-->
+      <div class="content-container w3-margin-top-1">
+
+        <!--ABOUT SECTION-->
+        <div class="w3-container w3-cursive">
+          <!--INTERESTS SECTION-->
+          <div class="w3-container w3-margin-top-2 w3-cursive">
+            <h3 class="w3-border-bottom brand-border" style="border-width: 3px !important;">WHO AM I?</h3>
+            <ul class="w3-ul" style="font-weight: 500;">
+              <li>My name is Bradford, and I am a Computer Science Undergraduate student at Carleton University, in
+                Ottawa, Ontario. I have experience in the federal public sector, having completed three internships with
+                Employment and Social Development Canada, and I will be beginning my fourth this summer with Transport
+                Canada. My current areas of interest are Data Analytics, Human-Computer Interaction, Cybersecurity, and
+                Technical Writing. </li>
+              <li>As for my other hobbies, I enjoy playing and watching Hockey (Go <img
+                  src="assets/torontomapleleafs.png" height="25" alt="Leafs" style="position: relative; top: -2px;">
+                Go), reading Comic Books, and playing Video Games with my friends. I'm currently reading Absolute Batman
+                and Wonder Woman, Mark Waid's World's Finest, and the current Skybound Transformers run. I'm also a
+                collector of sorts. In particular, I collect Transformers, Comics, and Funko Pops, with the occasional
+                Lego set for fun.</li>
+              <li>I hope you enjoy learning more about me, and I encourage you to reach out!.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--FOOTER-->
+      <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+      <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+        <p>© 2026 - Bradford Ward</p>
+        <!-- End footer -->
+      </footer>
+
+      <!--END OF CV SECTION-->
+    </section>
+  </section>
+  <script>
+    // Function to toggle mobile navigation
+    function toggleNavigation() {
+      let nav = document.getElementById("mobile-nav");
+      if (nav.classList.contains('w3-show')) {
+        nav.classList.remove('w3-show');
+      } else {
+        nav.classList.add('w3-show');
+      }
+    }
+  </script>
+  <script>
+    feather.replace()
+  </script>
+</body>
+
+</html>
